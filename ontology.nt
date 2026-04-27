@@ -1,0 +1,1073 @@
+<http://www.example.org/emdco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.example.org/emdco> <http://purl.org/dc/elements/1.1/creator> "Harmanjeet Singh Kaur"@en .
+<http://www.example.org/emdco> <http://purl.org/dc/elements/1.1/description> "This ontology models the EUDAMED catalogue including devices, manufacturers, identified risks, incidents and field safety corrective actions (FSCA)."@en .
+<http://www.example.org/emdco> <http://purl.org/dc/elements/1.1/title> "European Medical Device Catalogue Ontology (EMDCO)"@en .
+<http://www.example.org/emdco> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for the European catalogue of high-risk medical devices under MDR (EU 2017/745) and IVDR (EU 2017/746)."@en .
+<http://www.example.org/emdco> <http://www.w3.org/2000/01/rdf-schema#label> "European Medical Device Catalogue Ontology"@en .
+<http://www.example.org/emdco> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/11/swrl#argument1
+<http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/11/swrl#argument2
+<http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/11/swrl#body
+<http://www.w3.org/2003/11/swrl#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/11/swrl#classPredicate
+<http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/11/swrl#head
+<http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/11/swrl#propertyPredicate
+<http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.example.org/emdco#addressesIncident
+<http://www.example.org/emdco#addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to the incident that triggered it."@en .
+<http://www.example.org/emdco#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses incident"@en .
+# 
+# http://www.example.org/emdco#affectsDeviceType
+<http://www.example.org/emdco#affectsDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to the type of device it primarily affects."@en .
+<http://www.example.org/emdco#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "affects device type"@en .
+# 
+# http://www.example.org/emdco#associatedRisk
+<http://www.example.org/emdco#associatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the identified risk category according to IMDRF nomenclature."@en .
+<http://www.example.org/emdco#associatedRisk> <http://www.w3.org/2000/01/rdf-schema#label> "associated risk"@en .
+# 
+# http://www.example.org/emdco#hasManufacturer
+<http://www.example.org/emdco#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its registered manufacturer in EUDAMED."@en .
+<http://www.example.org/emdco#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer"@en .
+# 
+# http://www.example.org/emdco#hasRiskClass
+<http://www.example.org/emdco#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#RiskClass> .
+<http://www.example.org/emdco#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its regulatory risk classification."@en .
+<http://www.example.org/emdco#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "has risk class"@en .
+# 
+# http://www.example.org/emdco#involvedDevice
+<http://www.example.org/emdco#involvedDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#involvedDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#involvedDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#involvedDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the specific device involved in the event."@en .
+<http://www.example.org/emdco#involvedDevice> <http://www.w3.org/2000/01/rdf-schema#label> "involved device"@en .
+# 
+# http://www.example.org/emdco#isSubclassifiedUnder
+<http://www.example.org/emdco#isSubclassifiedUnder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#isSubclassifiedUnder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.example.org/emdco#isSubclassifiedUnder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#RiskClass> .
+<http://www.example.org/emdco#isSubclassifiedUnder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#RiskClass> .
+<http://www.example.org/emdco#isSubclassifiedUnder> <http://www.w3.org/2000/01/rdf-schema#comment> "Transitive property relating a risk class to a higher-level risk class in the MDR/IVDR classification hierarchy."@en .
+<http://www.example.org/emdco#isSubclassifiedUnder> <http://www.w3.org/2000/01/rdf-schema#label> "is subclassified under"@en .
+# 
+# http://www.example.org/emdco#issuedBy
+<http://www.example.org/emdco#issuedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#issuedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#issuedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#issuedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to the manufacturer who issued it."@en .
+<http://www.example.org/emdco#issuedBy> <http://www.w3.org/2000/01/rdf-schema#label> "issued by"@en .
+# 
+# http://www.example.org/emdco#reportedBy
+<http://www.example.org/emdco#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.example.org/emdco#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the manufacturer who submitted the report to EUDAMED."@en .
+<http://www.example.org/emdco#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.example.org/emdco#actionDate
+<http://www.example.org/emdco#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#actionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#actionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#actionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the corrective action was initiated."@en .
+<http://www.example.org/emdco#actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "action date"@en .
+# 
+# http://www.example.org/emdco#authorizationNumber
+<http://www.example.org/emdco#authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The national authorization number issued by the competent authority."@en .
+<http://www.example.org/emdco#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorization number"@en .
+# 
+# http://www.example.org/emdco#country
+<http://www.example.org/emdco#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#country> <http://www.w3.org/2000/01/rdf-schema#comment> "The country where the manufacturer is legally registered."@en .
+<http://www.example.org/emdco#country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+# 
+# http://www.example.org/emdco#countryReported
+<http://www.example.org/emdco#countryReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#countryReported> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#countryReported> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#countryReported> <http://www.w3.org/2000/01/rdf-schema#comment> "The EU member state where the incident was reported."@en .
+<http://www.example.org/emdco#countryReported> <http://www.w3.org/2000/01/rdf-schema#label> "country reported"@en .
+# 
+# http://www.example.org/emdco#deviceID
+<http://www.example.org/emdco#deviceID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#deviceID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.example.org/emdco#deviceID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#deviceID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#deviceID> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for the device in the EUDAMED catalogue."@en .
+<http://www.example.org/emdco#deviceID> <http://www.w3.org/2000/01/rdf-schema#label> "device ID"@en .
+# 
+# http://www.example.org/emdco#deviceName
+<http://www.example.org/emdco#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.example.org/emdco#deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#deviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "The commercial or trade name of the medical device."@en .
+<http://www.example.org/emdco#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device name"@en .
+# 
+# http://www.example.org/emdco#devicesAffected
+<http://www.example.org/emdco#devicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of devices covered by the field safety corrective action."@en .
+<http://www.example.org/emdco#devicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "devices affected"@en .
+# 
+# http://www.example.org/emdco#eudameSRN
+<http://www.example.org/emdco#eudameSRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#eudameSRN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#eudameSRN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#eudameSRN> <http://www.w3.org/2000/01/rdf-schema#comment> "Single Registration Number assigned by EUDAMED to the manufacturer."@en .
+<http://www.example.org/emdco#eudameSRN> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED SRN"@en .
+# 
+# http://www.example.org/emdco#eudamedFscaRef
+<http://www.example.org/emdco#eudamedFscaRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the field safety corrective action."@en .
+<http://www.example.org/emdco#eudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED FSCA reference"@en .
+# 
+# http://www.example.org/emdco#eudamedIncidentRef
+<http://www.example.org/emdco#eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#comment> "The official EUDAMED reference number for the incident report."@en .
+<http://www.example.org/emdco#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED incident reference"@en .
+# 
+# http://www.example.org/emdco#fscaID
+<http://www.example.org/emdco#fscaID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#fscaID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#fscaID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#fscaID> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for the field safety corrective action."@en .
+<http://www.example.org/emdco#fscaID> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA ID"@en .
+# 
+# http://www.example.org/emdco#imdrfCode
+<http://www.example.org/emdco#imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The standardised IMDRF (International Medical Device Regulators Forum) nomenclature code for the risk."@en .
+<http://www.example.org/emdco#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "IMDRF code"@en .
+# 
+# http://www.example.org/emdco#incidentID
+<http://www.example.org/emdco#incidentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#incidentID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#incidentID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#incidentID> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for the incident in EUDAMED."@en .
+<http://www.example.org/emdco#incidentID> <http://www.w3.org/2000/01/rdf-schema#label> "incident ID"@en .
+# 
+# http://www.example.org/emdco#intendedPurpose
+<http://www.example.org/emdco#intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended use of the device as declared by the manufacturer."@en .
+<http://www.example.org/emdco#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended purpose"@en .
+# 
+# http://www.example.org/emdco#isActive
+<http://www.example.org/emdco#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the device operation depends on an external energy source."@en .
+<http://www.example.org/emdco#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active"@en .
+# 
+# http://www.example.org/emdco#isIVD
+<http://www.example.org/emdco#isIVD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#isIVD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#isIVD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#isIVD> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the device is an in vitro diagnostic device regulated under IVDR."@en .
+<http://www.example.org/emdco#isIVD> <http://www.w3.org/2000/01/rdf-schema#label> "is IVD"@en .
+# 
+# http://www.example.org/emdco#isImplantable
+<http://www.example.org/emdco#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the device is intended to be implanted in the human body."@en .
+<http://www.example.org/emdco#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is implantable"@en .
+# 
+# http://www.example.org/emdco#isReusable
+<http://www.example.org/emdco#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the device can be reused after appropriate reprocessing."@en .
+<http://www.example.org/emdco#isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is reusable"@en .
+# 
+# http://www.example.org/emdco#manufacturerID
+<http://www.example.org/emdco#manufacturerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#manufacturerID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#manufacturerID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#manufacturerID> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique manufacturer identifier in EUDAMED."@en .
+<http://www.example.org/emdco#manufacturerID> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer ID"@en .
+# 
+# http://www.example.org/emdco#manufacturerName
+<http://www.example.org/emdco#manufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#manufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.example.org/emdco#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#comment> "The registered legal name of the manufacturer."@en .
+<http://www.example.org/emdco#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer name"@en .
+# 
+# http://www.example.org/emdco#outcome
+<http://www.example.org/emdco#outcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#outcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#outcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "The clinical outcome of the incident for the patient or user."@en .
+<http://www.example.org/emdco#outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome"@en .
+# 
+# http://www.example.org/emdco#patientAge
+<http://www.example.org/emdco#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of the patient involved in the incident at the time of the event."@en .
+<http://www.example.org/emdco#patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patient age"@en .
+# 
+# http://www.example.org/emdco#probability
+<http://www.example.org/emdco#probability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#probability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#probability> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#probability> <http://www.w3.org/2000/01/rdf-schema#comment> "The estimated probability of occurrence of the risk: Low, Medium or High."@en .
+<http://www.example.org/emdco#probability> <http://www.w3.org/2000/01/rdf-schema#label> "probability"@en .
+# 
+# http://www.example.org/emdco#regulatoryFramework
+<http://www.example.org/emdco#regulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "The EU regulation applicable to the device: MDR or IVDR."@en .
+<http://www.example.org/emdco#regulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "regulatory framework"@en .
+# 
+# http://www.example.org/emdco#reportDate
+<http://www.example.org/emdco#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the incident was officially reported to EUDAMED."@en .
+<http://www.example.org/emdco#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "report date"@en .
+# 
+# http://www.example.org/emdco#riskName
+<http://www.example.org/emdco#riskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#riskName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#riskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#riskName> <http://www.w3.org/2000/01/rdf-schema#comment> "The descriptive name of the identified risk."@en .
+<http://www.example.org/emdco#riskName> <http://www.w3.org/2000/01/rdf-schema#label> "risk name"@en .
+# 
+# http://www.example.org/emdco#severity
+<http://www.example.org/emdco#severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#severity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#severity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#severity> <http://www.w3.org/2000/01/rdf-schema#comment> "The clinical severity of the risk: Critical, Serious, Moderate or Low."@en .
+<http://www.example.org/emdco#severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+# 
+# http://www.example.org/emdco#status
+<http://www.example.org/emdco#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#status> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of the corrective action: Open or Closed."@en .
+<http://www.example.org/emdco#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# 
+# http://www.example.org/emdco#udiDI
+<http://www.example.org/emdco#udiDI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.org/emdco#udiDI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#udiDI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.org/emdco#udiDI> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique Device Identifier - Device Identifier as registered in EUDAMED."@en .
+<http://www.example.org/emdco#udiDI> <http://www.w3.org/2000/01/rdf-schema#label> "UDI-DI"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.example.org/emdco#ActiveDevice
+<http://www.example.org/emdco#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device whose operation depends on a source of energy other than that generated by the human body or gravity."@en .
+<http://www.example.org/emdco#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active Device"@en .
+# 
+# http://www.example.org/emdco#ActiveImplantDevice
+<http://www.example.org/emdco#ActiveImplantDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#ActiveImplantDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#ActiveDevice> .
+<http://www.example.org/emdco#ActiveImplantDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#ImplantableDevice> .
+<http://www.example.org/emdco#ActiveImplantDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdco#isActive> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdco#ActiveImplantDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdco#isImplantable> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdco#ActiveImplantDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that is both active and implantable, such as pacemakers or ventricular assist devices."@en .
+<http://www.example.org/emdco#ActiveImplantDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active Implant Device"@en .
+# 
+# http://www.example.org/emdco#ContaminationRisk
+<http://www.example.org/emdco#ContaminationRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk from reagent or product contamination leading to systematic errors."@en .
+<http://www.example.org/emdco#ContaminationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Contamination Risk"@en .
+# 
+# http://www.example.org/emdco#CybersecurityRisk
+<http://www.example.org/emdco#CybersecurityRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk from exploitable software vulnerabilities enabling unauthorised device access."@en .
+<http://www.example.org/emdco#CybersecurityRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Cybersecurity Risk"@en .
+# 
+# http://www.example.org/emdco#Device
+<http://www.example.org/emdco#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#MedicalEntity> .
+<http://www.example.org/emdco#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdco#hasManufacturer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdco#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device as defined by MDR (EU 2017/745) or IVDR (EU 2017/746)."@en .
+<http://www.example.org/emdco#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# http://www.example.org/emdco#DiagnosticRisk
+<http://www.example.org/emdco#DiagnosticRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of diagnostic error including false positive or false negative results from IVD devices."@en .
+<http://www.example.org/emdco#DiagnosticRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Risk"@en .
+# 
+# http://www.example.org/emdco#FieldSafetyCorrectiveAction
+<http://www.example.org/emdco#FieldSafetyCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#MedicalEntity> .
+<http://www.example.org/emdco#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "An action taken by a manufacturer to reduce a risk of death or serious deterioration associated with the use of a device already placed on the market (FSCA)."@en .
+<http://www.example.org/emdco#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Field Safety Corrective Action"@en .
+# 
+# http://www.example.org/emdco#IVDRRiskClass
+<http://www.example.org/emdco#IVDRRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#RiskClass> .
+<http://www.example.org/emdco#IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk classification under Regulation EU 2017/746 (IVDR): Class A, B, C, D."@en .
+<http://www.example.org/emdco#IVDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR Risk Class"@en .
+# 
+# http://www.example.org/emdco#ImplantableDevice
+<http://www.example.org/emdco#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended to be totally or partially introduced into the human body and intended to remain there after the procedure."@en .
+<http://www.example.org/emdco#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Device"@en .
+# 
+# http://www.example.org/emdco#InSituCorrection
+<http://www.example.org/emdco#InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective action performed on a device while it remains in use, such as software updates or protocol changes."@en .
+<http://www.example.org/emdco#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "In Situ Correction"@en .
+# 
+# http://www.example.org/emdco#InVitroDiagnosticDevice
+<http://www.example.org/emdco#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended for examination of specimens derived from the human body, regulated under IVDR (EU 2017/746)."@en .
+<http://www.example.org/emdco#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device"@en .
+# 
+# http://www.example.org/emdco#Incident
+<http://www.example.org/emdco#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#MedicalEntity> .
+<http://www.example.org/emdco#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.example.org/emdco#Device> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.example.org/emdco#involvedDevice> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.example.org/emdco#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A malfunction or deterioration in the characteristics of a device which has led or could lead to the death or serious injury of a patient."@en .
+<http://www.example.org/emdco#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
+# 
+# http://www.example.org/emdco#InfectionRisk
+<http://www.example.org/emdco#InfectionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of device-related infection including site infection, sepsis or biofilm formation."@en .
+<http://www.example.org/emdco#InfectionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Infection Risk"@en .
+# 
+# http://www.example.org/emdco#InjuryRisk
+<http://www.example.org/emdco#InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of direct physical harm or injury to the patient caused by the device."@en .
+<http://www.example.org/emdco#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Injury Risk"@en .
+# 
+# http://www.example.org/emdco#InterferenceRisk
+<http://www.example.org/emdco#InterferenceRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk from electromagnetic interference or MRI-related artefacts affecting device performance."@en .
+<http://www.example.org/emdco#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Interference Risk"@en .
+# 
+# http://www.example.org/emdco#MDRRiskClass
+<http://www.example.org/emdco#MDRRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#RiskClass> .
+<http://www.example.org/emdco#MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk classification under Regulation EU 2017/745 (MDR): Class I, IIa, IIb, III."@en .
+<http://www.example.org/emdco#MDRRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "MDR Risk Class"@en .
+# 
+# http://www.example.org/emdco#MalfunctionRisk
+<http://www.example.org/emdco#MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk arising from device malfunction or failure to perform as intended."@en .
+<http://www.example.org/emdco#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Malfunction Risk"@en .
+# 
+# http://www.example.org/emdco#Manufacturer
+<http://www.example.org/emdco#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#MedicalEntity> .
+<http://www.example.org/emdco#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural or legal person who manufactures or fully refurbishes a device or has a device designed, manufactured or fully refurbished."@en .
+<http://www.example.org/emdco#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer"@en .
+# 
+# http://www.example.org/emdco#MaterialRisk
+<http://www.example.org/emdco#MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk from wear debris, corrosion or adverse tissue reaction to implant materials."@en .
+<http://www.example.org/emdco#MaterialRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Material Risk"@en .
+# 
+# http://www.example.org/emdco#MedicalEntity
+<http://www.example.org/emdco#MedicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#MedicalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Top-level class for all entities in the medical device domain."@en .
+<http://www.example.org/emdco#MedicalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Entity"@en .
+# 
+# http://www.example.org/emdco#NearMissIncident
+<http://www.example.org/emdco#NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident where a potential harm did not reach the patient due to fortunate circumstances or corrective action."@en .
+<http://www.example.org/emdco#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Near Miss Incident"@en .
+# 
+# http://www.example.org/emdco#RadiationRisk
+<http://www.example.org/emdco#RadiationRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#RadiationRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#RadiationRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk of unintended ionising or non-ionising radiation exposure."@en .
+<http://www.example.org/emdco#RadiationRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation Risk"@en .
+# 
+# http://www.example.org/emdco#Recall
+<http://www.example.org/emdco#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective action to return or replace devices already distributed due to a safety issue."@en .
+<http://www.example.org/emdco#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall"@en .
+# 
+# http://www.example.org/emdco#Risk
+<http://www.example.org/emdco#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#MedicalEntity> .
+<http://www.example.org/emdco#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "An identified risk associated with a medical device, classified according to IMDRF nomenclature."@en .
+<http://www.example.org/emdco#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# http://www.example.org/emdco#RiskClass
+<http://www.example.org/emdco#RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of medical device risk level as defined by MDR or IVDR."@en .
+<http://www.example.org/emdco#RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Class"@en .
+# 
+# http://www.example.org/emdco#SafetyAlert
+<http://www.example.org/emdco#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "A communication issued to healthcare professionals or users regarding updated safety guidance for a device."@en .
+<http://www.example.org/emdco#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Alert"@en .
+# 
+# http://www.example.org/emdco#SelfTestDevice
+<http://www.example.org/emdco#SelfTestDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#InVitroDiagnosticDevice> .
+<http://www.example.org/emdco#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "An IVD device intended for use by lay persons in a home environment."@en .
+<http://www.example.org/emdco#SelfTestDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Self-Test Device"@en .
+# 
+# http://www.example.org/emdco#SeriousIncident
+<http://www.example.org/emdco#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Incident> .
+<http://www.example.org/emdco#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "An incident that directly or indirectly led to the death, serious injury, or serious deterioration in the health of a patient."@en .
+<http://www.example.org/emdco#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident"@en .
+# 
+# http://www.example.org/emdco#SingleUseDevice
+<http://www.example.org/emdco#SingleUseDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Device> .
+<http://www.example.org/emdco#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device intended to be used on one individual during a single procedure."@en .
+<http://www.example.org/emdco#SingleUseDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Single Use Device"@en .
+# 
+# http://www.example.org/emdco#SoftwareRisk
+<http://www.example.org/emdco#SoftwareRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#Risk> .
+<http://www.example.org/emdco#SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk arising from software malfunction including incorrect dosing or alarming."@en .
+<http://www.example.org/emdco#SoftwareRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Software Risk"@en .
+# 
+# http://www.example.org/emdco#UserNotice
+<http://www.example.org/emdco#UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.org/emdco#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A field safety notice issued to device users or operators providing updated usage instructions."@en .
+<http://www.example.org/emdco#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "User Notice"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.example.org/emdco#abbott
+<http://www.example.org/emdco#abbott> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#abbott> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#abbott> <http://www.example.org/emdco#authorizationNumber> "DE/2017/005678" .
+<http://www.example.org/emdco#abbott> <http://www.example.org/emdco#country> "Germany" .
+<http://www.example.org/emdco#abbott> <http://www.example.org/emdco#eudameSRN> "SRN-DE-MED-0002" .
+<http://www.example.org/emdco#abbott> <http://www.example.org/emdco#manufacturerID> "MAN-002" .
+<http://www.example.org/emdco#abbott> <http://www.example.org/emdco#manufacturerName> "Abbott Medical Devices" .
+<http://www.example.org/emdco#abbott> <http://www.w3.org/2000/01/rdf-schema#comment> "German-registered manufacturer of cardiovascular and diagnostic devices."@en .
+<http://www.example.org/emdco#abbott> <http://www.w3.org/2000/01/rdf-schema#label> "Abbott Medical Devices"@en .
+# 
+# http://www.example.org/emdco#bostonScientific
+<http://www.example.org/emdco#bostonScientific> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#bostonScientific> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#bostonScientific> <http://www.example.org/emdco#authorizationNumber> "IE/2017/002345" .
+<http://www.example.org/emdco#bostonScientific> <http://www.example.org/emdco#country> "Ireland" .
+<http://www.example.org/emdco#bostonScientific> <http://www.example.org/emdco#eudameSRN> "SRN-IE-MED-0006" .
+<http://www.example.org/emdco#bostonScientific> <http://www.example.org/emdco#manufacturerID> "MAN-006" .
+<http://www.example.org/emdco#bostonScientific> <http://www.example.org/emdco#manufacturerName> "Boston Scientific Corporation" .
+<http://www.example.org/emdco#bostonScientific> <http://www.w3.org/2000/01/rdf-schema#comment> "Irish-registered manufacturer of interventional cardiology and electrophysiology devices."@en .
+<http://www.example.org/emdco#bostonScientific> <http://www.w3.org/2000/01/rdf-schema#label> "Boston Scientific Corporation"@en .
+# 
+# http://www.example.org/emdco#classA
+<http://www.example.org/emdco#classA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#IVDRRiskClass> .
+<http://www.example.org/emdco#classA> <http://www.w3.org/2000/01/rdf-schema#comment> "Lowest risk class under IVDR (EU 2017/746)."@en .
+<http://www.example.org/emdco#classA> <http://www.w3.org/2000/01/rdf-schema#label> "Class A"@en .
+# 
+# http://www.example.org/emdco#classB
+<http://www.example.org/emdco#classB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#IVDRRiskClass> .
+<http://www.example.org/emdco#classB> <http://www.w3.org/2000/01/rdf-schema#comment> "Low-medium risk class under IVDR."@en .
+<http://www.example.org/emdco#classB> <http://www.w3.org/2000/01/rdf-schema#label> "Class B"@en .
+# 
+# http://www.example.org/emdco#classC
+<http://www.example.org/emdco#classC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#IVDRRiskClass> .
+<http://www.example.org/emdco#classC> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-high risk class under IVDR."@en .
+<http://www.example.org/emdco#classC> <http://www.w3.org/2000/01/rdf-schema#label> "Class C"@en .
+# 
+# http://www.example.org/emdco#classD
+<http://www.example.org/emdco#classD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#IVDRRiskClass> .
+<http://www.example.org/emdco#classD> <http://www.w3.org/2000/01/rdf-schema#comment> "Highest risk class under IVDR. Used for HIV, hepatitis and blood group tests."@en .
+<http://www.example.org/emdco#classD> <http://www.w3.org/2000/01/rdf-schema#label> "Class D"@en .
+# 
+# http://www.example.org/emdco#classI
+<http://www.example.org/emdco#classI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#MDRRiskClass> .
+<http://www.example.org/emdco#classI> <http://www.w3.org/2000/01/rdf-schema#comment> "Lowest risk class under MDR (EU 2017/745). General controls required."@en .
+<http://www.example.org/emdco#classI> <http://www.w3.org/2000/01/rdf-schema#label> "Class I"@en .
+# 
+# http://www.example.org/emdco#classIII
+<http://www.example.org/emdco#classIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#MDRRiskClass> .
+<http://www.example.org/emdco#classIII> <http://www.example.org/emdco#isSubclassifiedUnder> <http://www.example.org/emdco#classIIb> .
+<http://www.example.org/emdco#classIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Highest risk class under MDR. Reserved for devices posing the highest risk, requires clinical evaluation."@en .
+<http://www.example.org/emdco#classIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III"@en .
+# 
+# http://www.example.org/emdco#classIIa
+<http://www.example.org/emdco#classIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#MDRRiskClass> .
+<http://www.example.org/emdco#classIIa> <http://www.example.org/emdco#isSubclassifiedUnder> <http://www.example.org/emdco#classI> .
+<http://www.example.org/emdco#classIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium risk class under MDR. Requires involvement of a notified body."@en .
+<http://www.example.org/emdco#classIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIa"@en .
+# 
+# http://www.example.org/emdco#classIIb
+<http://www.example.org/emdco#classIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#classIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#MDRRiskClass> .
+<http://www.example.org/emdco#classIIb> <http://www.example.org/emdco#isSubclassifiedUnder> <http://www.example.org/emdco#classIIa> .
+<http://www.example.org/emdco#classIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Medium-high risk class under MDR. Requires stricter notified body scrutiny."@en .
+<http://www.example.org/emdco#classIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIb"@en .
+# 
+# http://www.example.org/emdco#cobasSARSCoV2
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#InVitroDiagnosticDevice> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#hasManufacturer> <http://www.example.org/emdco#roche> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#hasRiskClass> <http://www.example.org/emdco#classC> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#deviceID> "DEV-017" .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#deviceName> "cobas SARS-CoV-2 RT-PCR Test" .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#intendedPurpose> "Molecular diagnostic test for SARS-CoV-2 detection" .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#isActive> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#isIVD> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#isImplantable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#regulatoryFramework> "IVDR" .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.example.org/emdco#udiDI> "(01)04015630001017" .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.w3.org/2000/01/rdf-schema#comment> "Molecular diagnostic test for SARS-CoV-2 detection. Class C IVDR device."@en .
+<http://www.example.org/emdco#cobasSARSCoV2> <http://www.w3.org/2000/01/rdf-schema#label> "cobas SARS-CoV-2 RT-PCR Test"@en .
+# 
+# http://www.example.org/emdco#fsca001
+<http://www.example.org/emdco#fsca001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#fsca001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#SafetyAlert> .
+<http://www.example.org/emdco#fsca001> <http://www.example.org/emdco#addressesIncident> <http://www.example.org/emdco#inc001> .
+<http://www.example.org/emdco#fsca001> <http://www.example.org/emdco#issuedBy> <http://www.example.org/emdco#medtronic> .
+<http://www.example.org/emdco#fsca001> <http://www.example.org/emdco#actionDate> "2024-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#fsca001> <http://www.example.org/emdco#devicesAffected> "850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#fsca001> <http://www.example.org/emdco#eudamedFscaRef> "EU-FSCA-2024-000001" .
+<http://www.example.org/emdco#fsca001> <http://www.example.org/emdco#fscaID> "FSCA-001" .
+<http://www.example.org/emdco#fsca001> <http://www.example.org/emdco#status> "Open" .
+<http://www.example.org/emdco#fsca001> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk."@en .
+<http://www.example.org/emdco#fsca001> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-001 HeartMate 3 anticoagulation alert"@en .
+# 
+# http://www.example.org/emdco#fsca002
+<http://www.example.org/emdco#fsca002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#fsca002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#Recall> .
+<http://www.example.org/emdco#fsca002> <http://www.example.org/emdco#addressesIncident> <http://www.example.org/emdco#inc002> .
+<http://www.example.org/emdco#fsca002> <http://www.example.org/emdco#issuedBy> <http://www.example.org/emdco#medtronic> .
+<http://www.example.org/emdco#fsca002> <http://www.example.org/emdco#actionDate> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#fsca002> <http://www.example.org/emdco#devicesAffected> "1240"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#fsca002> <http://www.example.org/emdco#eudamedFscaRef> "EU-FSCA-2024-000002" .
+<http://www.example.org/emdco#fsca002> <http://www.example.org/emdco#fscaID> "FSCA-002" .
+<http://www.example.org/emdco#fsca002> <http://www.example.org/emdco#status> "Closed" .
+<http://www.example.org/emdco#fsca002> <http://www.w3.org/2000/01/rdf-schema#comment> "Voluntary recall of affected Micra AV lots due to premature battery depletion. Replacement units provided."@en .
+<http://www.example.org/emdco#fsca002> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-002 Micra AV battery recall"@en .
+# 
+# http://www.example.org/emdco#fsca003
+<http://www.example.org/emdco#fsca003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#fsca003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#InSituCorrection> .
+<http://www.example.org/emdco#fsca003> <http://www.example.org/emdco#addressesIncident> <http://www.example.org/emdco#inc003> .
+<http://www.example.org/emdco#fsca003> <http://www.example.org/emdco#issuedBy> <http://www.example.org/emdco#abbott> .
+<http://www.example.org/emdco#fsca003> <http://www.example.org/emdco#actionDate> "2024-03-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#fsca003> <http://www.example.org/emdco#devicesAffected> "320"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#fsca003> <http://www.example.org/emdco#eudamedFscaRef> "EU-FSCA-2024-000003" .
+<http://www.example.org/emdco#fsca003> <http://www.example.org/emdco#fscaID> "FSCA-003" .
+<http://www.example.org/emdco#fsca003> <http://www.example.org/emdco#status> "Closed" .
+<http://www.example.org/emdco#fsca003> <http://www.w3.org/2000/01/rdf-schema#comment> "Enhanced deployment training and updated IFU for Portico valve implantation technique."@en .
+<http://www.example.org/emdco#fsca003> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-003 Portico valve technique correction"@en .
+# 
+# http://www.example.org/emdco#fsca010
+<http://www.example.org/emdco#fsca010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#fsca010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#Recall> .
+<http://www.example.org/emdco#fsca010> <http://www.example.org/emdco#addressesIncident> <http://www.example.org/emdco#inc012> .
+<http://www.example.org/emdco#fsca010> <http://www.example.org/emdco#issuedBy> <http://www.example.org/emdco#roche> .
+<http://www.example.org/emdco#fsca010> <http://www.example.org/emdco#actionDate> "2024-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#fsca010> <http://www.example.org/emdco#eudamedFscaRef> "EU-FSCA-2024-000010" .
+<http://www.example.org/emdco#fsca010> <http://www.example.org/emdco#fscaID> "FSCA-010" .
+<http://www.example.org/emdco#fsca010> <http://www.example.org/emdco#status> "Closed" .
+<http://www.example.org/emdco#fsca010> <http://www.w3.org/2000/01/rdf-schema#comment> "Immediate quarantine and replacement of affected reagent lots. New primer design covering BA.2.86 released."@en .
+<http://www.example.org/emdco#fsca010> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-010 cobas SARS-CoV-2 reagent recall"@en .
+# 
+# http://www.example.org/emdco#heartmate3
+<http://www.example.org/emdco#heartmate3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#heartmate3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#ActiveImplantDevice> .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#hasManufacturer> <http://www.example.org/emdco#medtronic> .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#hasRiskClass> <http://www.example.org/emdco#classIII> .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#deviceID> "DEV-001" .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#deviceName> "HeartMate 3 LVAD" .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#intendedPurpose> "Ventricular assist device for end-stage heart failure" .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#isIVD> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#regulatoryFramework> "MDR" .
+<http://www.example.org/emdco#heartmate3> <http://www.example.org/emdco#udiDI> "(01)00380740009095" .
+<http://www.example.org/emdco#heartmate3> <http://www.w3.org/2000/01/rdf-schema#comment> "Left ventricular assist device for end-stage heart failure patients. Class III MDR device."@en .
+<http://www.example.org/emdco#heartmate3> <http://www.w3.org/2000/01/rdf-schema#label> "HeartMate 3 LVAD"@en .
+# 
+# http://www.example.org/emdco#inc001
+<http://www.example.org/emdco#inc001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#inc001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#SeriousIncident> .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#associatedRisk> <http://www.example.org/emdco#rsk003> .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#involvedDevice> <http://www.example.org/emdco#heartmate3> .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#reportedBy> <http://www.example.org/emdco#medtronic> .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#countryReported> "Germany" .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#eudamedIncidentRef> "EU-INC-2024-000001" .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#incidentID> "INC-001" .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#outcome> "Serious patient injury - embolic stroke" .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#patientAge> "58"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#inc001> <http://www.example.org/emdco#reportDate> "2024-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#inc001> <http://www.w3.org/2000/01/rdf-schema#comment> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant due to device thrombus."@en .
+<http://www.example.org/emdco#inc001> <http://www.w3.org/2000/01/rdf-schema#label> "INC-001 HeartMate 3 thrombosis"@en .
+# 
+# http://www.example.org/emdco#inc002
+<http://www.example.org/emdco#inc002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#inc002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#SeriousIncident> .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#associatedRisk> <http://www.example.org/emdco#rsk009> .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#involvedDevice> <http://www.example.org/emdco#micraAV> .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#reportedBy> <http://www.example.org/emdco#medtronic> .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#countryReported> "France" .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#eudamedIncidentRef> "EU-INC-2024-000002" .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#incidentID> "INC-002" .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#outcome> "Device malfunction - premature battery depletion" .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#patientAge> "72"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#inc002> <http://www.example.org/emdco#reportDate> "2024-02-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#inc002> <http://www.w3.org/2000/01/rdf-schema#comment> "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."@en .
+<http://www.example.org/emdco#inc002> <http://www.w3.org/2000/01/rdf-schema#label> "INC-002 Micra AV battery depletion"@en .
+# 
+# http://www.example.org/emdco#inc003
+<http://www.example.org/emdco#inc003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#inc003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#SeriousIncident> .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#associatedRisk> <http://www.example.org/emdco#rsk005> .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#involvedDevice> <http://www.example.org/emdco#porticoValve> .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#reportedBy> <http://www.example.org/emdco#abbott> .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#countryReported> "Italy" .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#eudamedIncidentRef> "EU-INC-2024-000003" .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#incidentID> "INC-003" .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#outcome> "Surgical intervention required - valve re-anchoring" .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#patientAge> "67"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.org/emdco#inc003> <http://www.example.org/emdco#reportDate> "2024-02-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#inc003> <http://www.w3.org/2000/01/rdf-schema#comment> "Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure."@en .
+<http://www.example.org/emdco#inc003> <http://www.w3.org/2000/01/rdf-schema#label> "INC-003 Portico valve migration"@en .
+# 
+# http://www.example.org/emdco#inc012
+<http://www.example.org/emdco#inc012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#inc012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#SeriousIncident> .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#associatedRisk> <http://www.example.org/emdco#rsk015> .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#involvedDevice> <http://www.example.org/emdco#cobasSARSCoV2> .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#reportedBy> <http://www.example.org/emdco#roche> .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#countryReported> "Spain" .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#eudamedIncidentRef> "EU-INC-2024-000012" .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#incidentID> "INC-012" .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#outcome> "Diagnostic error - false negative SARS-CoV-2" .
+<http://www.example.org/emdco#inc012> <http://www.example.org/emdco#reportDate> "2024-06-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.example.org/emdco#inc012> <http://www.w3.org/2000/01/rdf-schema#comment> "cobas SARS-CoV-2 assay failed to detect Omicron BA.2.86 subvariant in 7 samples confirmed positive by sequencing."@en .
+<http://www.example.org/emdco#inc012> <http://www.w3.org/2000/01/rdf-schema#label> "INC-012 cobas SARS-CoV-2 false negative"@en .
+# 
+# http://www.example.org/emdco#medtronic
+<http://www.example.org/emdco#medtronic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#medtronic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#medtronic> <http://www.example.org/emdco#authorizationNumber> "IE/2017/001234" .
+<http://www.example.org/emdco#medtronic> <http://www.example.org/emdco#country> "Ireland" .
+<http://www.example.org/emdco#medtronic> <http://www.example.org/emdco#eudameSRN> "SRN-IE-MED-0001" .
+<http://www.example.org/emdco#medtronic> <http://www.example.org/emdco#manufacturerID> "MAN-001" .
+<http://www.example.org/emdco#medtronic> <http://www.example.org/emdco#manufacturerName> "Medtronic plc" .
+<http://www.example.org/emdco#medtronic> <http://www.w3.org/2000/01/rdf-schema#comment> "Multinational medical device manufacturer headquartered in Dublin, Ireland."@en .
+<http://www.example.org/emdco#medtronic> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic plc"@en .
+# 
+# http://www.example.org/emdco#micraAV
+<http://www.example.org/emdco#micraAV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#micraAV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#ActiveImplantDevice> .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#hasManufacturer> <http://www.example.org/emdco#medtronic> .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#hasRiskClass> <http://www.example.org/emdco#classIII> .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#deviceID> "DEV-002" .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#deviceName> "Micra AV Transcatheter Pacing System" .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#intendedPurpose> "Leadless cardiac pacemaker for atrioventricular synchrony" .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#isIVD> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#regulatoryFramework> "MDR" .
+<http://www.example.org/emdco#micraAV> <http://www.example.org/emdco#udiDI> "(01)00380740009112" .
+<http://www.example.org/emdco#micraAV> <http://www.w3.org/2000/01/rdf-schema#comment> "Leadless cardiac pacemaker for atrioventricular synchrony. Class III MDR device."@en .
+<http://www.example.org/emdco#micraAV> <http://www.w3.org/2000/01/rdf-schema#label> "Micra AV Transcatheter Pacing System"@en .
+# 
+# http://www.example.org/emdco#porticoValve
+<http://www.example.org/emdco#porticoValve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#porticoValve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#ImplantableDevice> .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#hasManufacturer> <http://www.example.org/emdco#abbott> .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#hasRiskClass> <http://www.example.org/emdco#classIII> .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#deviceID> "DEV-003" .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#deviceName> "Portico Transcatheter Heart Valve" .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#intendedPurpose> "Transcatheter aortic valve replacement (TAVI)" .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#isActive> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#isIVD> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#regulatoryFramework> "MDR" .
+<http://www.example.org/emdco#porticoValve> <http://www.example.org/emdco#udiDI> "(01)00800002222291" .
+<http://www.example.org/emdco#porticoValve> <http://www.w3.org/2000/01/rdf-schema#comment> "Transcatheter aortic valve replacement device. Class III MDR device."@en .
+<http://www.example.org/emdco#porticoValve> <http://www.w3.org/2000/01/rdf-schema#label> "Portico Transcatheter Heart Valve"@en .
+# 
+# http://www.example.org/emdco#roche
+<http://www.example.org/emdco#roche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#roche> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#roche> <http://www.example.org/emdco#authorizationNumber> "DE/2017/007890" .
+<http://www.example.org/emdco#roche> <http://www.example.org/emdco#country> "Germany" .
+<http://www.example.org/emdco#roche> <http://www.example.org/emdco#eudameSRN> "SRN-DE-MED-0005" .
+<http://www.example.org/emdco#roche> <http://www.example.org/emdco#manufacturerID> "MAN-005" .
+<http://www.example.org/emdco#roche> <http://www.example.org/emdco#manufacturerName> "Roche Diagnostics GmbH" .
+<http://www.example.org/emdco#roche> <http://www.w3.org/2000/01/rdf-schema#comment> "German manufacturer of in vitro diagnostic systems and reagents."@en .
+<http://www.example.org/emdco#roche> <http://www.w3.org/2000/01/rdf-schema#label> "Roche Diagnostics GmbH"@en .
+# 
+# http://www.example.org/emdco#rsk001
+<http://www.example.org/emdco#rsk001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#rsk001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#MalfunctionRisk> .
+<http://www.example.org/emdco#rsk001> <http://www.example.org/emdco#imdrfCode> "A0101" .
+<http://www.example.org/emdco#rsk001> <http://www.example.org/emdco#probability> "Low" .
+<http://www.example.org/emdco#rsk001> <http://www.example.org/emdco#riskName> "Device failure - electrical" .
+<http://www.example.org/emdco#rsk001> <http://www.example.org/emdco#severity> "Critical" .
+<http://www.example.org/emdco#rsk001> <http://www.w3.org/2000/01/rdf-schema#comment> "Complete loss of electrical function leading to device shutdown."@en .
+<http://www.example.org/emdco#rsk001> <http://www.w3.org/2000/01/rdf-schema#label> "Device failure - electrical"@en .
+# 
+# http://www.example.org/emdco#rsk003
+<http://www.example.org/emdco#rsk003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#rsk003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#InjuryRisk> .
+<http://www.example.org/emdco#rsk003> <http://www.example.org/emdco#imdrfCode> "A0201" .
+<http://www.example.org/emdco#rsk003> <http://www.example.org/emdco#probability> "Low" .
+<http://www.example.org/emdco#rsk003> <http://www.example.org/emdco#riskName> "Thrombosis - device-related" .
+<http://www.example.org/emdco#rsk003> <http://www.example.org/emdco#severity> "Critical" .
+<http://www.example.org/emdco#rsk003> <http://www.w3.org/2000/01/rdf-schema#comment> "Thrombus formation on device surface causing embolic events."@en .
+<http://www.example.org/emdco#rsk003> <http://www.w3.org/2000/01/rdf-schema#label> "Thrombosis - device-related"@en .
+# 
+# http://www.example.org/emdco#rsk005
+<http://www.example.org/emdco#rsk005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#rsk005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#MalfunctionRisk> .
+<http://www.example.org/emdco#rsk005> <http://www.example.org/emdco#imdrfCode> "A0301" .
+<http://www.example.org/emdco#rsk005> <http://www.example.org/emdco#probability> "Low" .
+<http://www.example.org/emdco#rsk005> <http://www.example.org/emdco#riskName> "Device migration - implant" .
+<http://www.example.org/emdco#rsk005> <http://www.example.org/emdco#severity> "Serious" .
+<http://www.example.org/emdco#rsk005> <http://www.w3.org/2000/01/rdf-schema#comment> "Unintended displacement of implant from intended anatomical position."@en .
+<http://www.example.org/emdco#rsk005> <http://www.w3.org/2000/01/rdf-schema#label> "Device migration - implant"@en .
+# 
+# http://www.example.org/emdco#rsk009
+<http://www.example.org/emdco#rsk009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#rsk009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#MalfunctionRisk> .
+<http://www.example.org/emdco#rsk009> <http://www.example.org/emdco#imdrfCode> "A0501" .
+<http://www.example.org/emdco#rsk009> <http://www.example.org/emdco#probability> "Low" .
+<http://www.example.org/emdco#rsk009> <http://www.example.org/emdco#riskName> "Battery depletion - premature" .
+<http://www.example.org/emdco#rsk009> <http://www.example.org/emdco#severity> "Critical" .
+<http://www.example.org/emdco#rsk009> <http://www.w3.org/2000/01/rdf-schema#comment> "Battery end-of-life earlier than specified, risking therapy interruption."@en .
+<http://www.example.org/emdco#rsk009> <http://www.w3.org/2000/01/rdf-schema#label> "Battery depletion - premature"@en .
+# 
+# http://www.example.org/emdco#rsk010
+<http://www.example.org/emdco#rsk010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#rsk010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#SoftwareRisk> .
+<http://www.example.org/emdco#rsk010> <http://www.example.org/emdco#imdrfCode> "A0502" .
+<http://www.example.org/emdco#rsk010> <http://www.example.org/emdco#probability> "Low" .
+<http://www.example.org/emdco#rsk010> <http://www.example.org/emdco#riskName> "Software malfunction" .
+<http://www.example.org/emdco#rsk010> <http://www.example.org/emdco#severity> "Critical" .
+<http://www.example.org/emdco#rsk010> <http://www.w3.org/2000/01/rdf-schema#comment> "Software bug causing incorrect dosing, alarming, or therapy delivery."@en .
+<http://www.example.org/emdco#rsk010> <http://www.w3.org/2000/01/rdf-schema#label> "Software malfunction"@en .
+# 
+# http://www.example.org/emdco#rsk015
+<http://www.example.org/emdco#rsk015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#rsk015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#DiagnosticRisk> .
+<http://www.example.org/emdco#rsk015> <http://www.example.org/emdco#imdrfCode> "B0102" .
+<http://www.example.org/emdco#rsk015> <http://www.example.org/emdco#probability> "Low" .
+<http://www.example.org/emdco#rsk015> <http://www.example.org/emdco#riskName> "False negative result" .
+<http://www.example.org/emdco#rsk015> <http://www.example.org/emdco#severity> "Critical" .
+<http://www.example.org/emdco#rsk015> <http://www.w3.org/2000/01/rdf-schema#comment> "IVD test fails to detect target condition in affected individual."@en .
+<http://www.example.org/emdco#rsk015> <http://www.w3.org/2000/01/rdf-schema#label> "False negative result"@en .
+# 
+# http://www.example.org/emdco#siemens
+<http://www.example.org/emdco#siemens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#siemens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#Manufacturer> .
+<http://www.example.org/emdco#siemens> <http://www.example.org/emdco#authorizationNumber> "DE/2017/009012" .
+<http://www.example.org/emdco#siemens> <http://www.example.org/emdco#country> "Germany" .
+<http://www.example.org/emdco#siemens> <http://www.example.org/emdco#eudameSRN> "SRN-DE-MED-0003" .
+<http://www.example.org/emdco#siemens> <http://www.example.org/emdco#manufacturerID> "MAN-003" .
+<http://www.example.org/emdco#siemens> <http://www.example.org/emdco#manufacturerName> "Siemens Healthineers AG" .
+<http://www.example.org/emdco#siemens> <http://www.w3.org/2000/01/rdf-schema#comment> "German manufacturer of imaging and diagnostic equipment."@en .
+<http://www.example.org/emdco#siemens> <http://www.w3.org/2000/01/rdf-schema#label> "Siemens Healthineers AG"@en .
+# 
+# http://www.example.org/emdco#vivasCRT
+<http://www.example.org/emdco#vivasCRT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/emdco#vivasCRT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.org/emdco#ActiveImplantDevice> .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#hasRiskClass> <http://www.example.org/emdco#classIII> .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#deviceID> "DEV-012" .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#deviceName> "Viva Cardiac Resynchronization Defibrillator" .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#intendedPurpose> "Cardiac resynchronization therapy with defibrillation" .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#isIVD> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#isReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#regulatoryFramework> "MDR" .
+<http://www.example.org/emdco#vivasCRT> <http://www.example.org/emdco#udiDI> "(01)04012099001012" .
+<http://www.example.org/emdco#vivasCRT> <http://www.w3.org/2000/01/rdf-schema#comment> "Cardiac resynchronization therapy device with defibrillation. Class III MDR."@en .
+<http://www.example.org/emdco#vivasCRT> <http://www.w3.org/2000/01/rdf-schema#label> "Viva Cardiac Resynchronization Defibrillator"@en .
+# 
+_:genid5 <http://www.w3.org/2003/11/swrl#argument1> _:genid6 .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "d" .
+_:genid5 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdco#Device> .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> _:genid8 .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "d" .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/emdco#classIII> .
+_:genid7 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/emdco#hasRiskClass> .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> _:genid10 .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "d" .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/emdco#ActiveImplantDevice> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.example.org/emdco#rule1> <http://www.w3.org/2003/11/swrl#body> _:genid11 .
+<http://www.example.org/emdco#rule1> <http://www.w3.org/2003/11/swrl#head> _:genid12 .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid13 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#arguments> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#m> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#d> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#hasManufacturer> .
+<http://www.example.org/emdco#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#arguments> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#d> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#i> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#involvedDevice> .
+<http://www.example.org/emdco#involvedDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#arguments> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#i> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#f> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#addressesIncident> .
+<http://www.example.org/emdco#addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#arguments> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#f> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#FieldSafetyCorrectiveAction> .
+<http://www.example.org/emdco#FieldSafetyCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/2003/11/swrl#head> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#arguments> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#m> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#f> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#issuedBy> .
+<http://www.example.org/emdco#issuedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#arguments> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#m> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#d> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#hasManufacturer> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#arguments> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#d> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#i> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#involvedDevice> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#arguments> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#i> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#SeriousIncident> .
+<http://www.example.org/emdco#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#arguments> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#m> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#i> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/2003/11/swrl#builtin> <http://www.example.org/emdco#reportedBy> .
+<http://www.example.org/emdco#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
